@@ -415,7 +415,7 @@ sub parse {
                     IRC::privmsg("You don't have access to HoG.", $usernick);
                 }
                 else {
-                    hog();
+                Events::hog();
                 }
             }
             elsif ($arg[3] eq "calamity") {
