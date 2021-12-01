@@ -30,7 +30,7 @@ sub penalize {
             $pen = $Options::opts{limitpen}; 
         } 
         $Simulation::rps{$username}{next}+=$pen;
-        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving the 5Top Players Battle.");
+        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving the Top Players Battle.");
     }
     if ($type eq "DMtourney") {
         $pen = int(300 * penttl($Simulation::rps{$username}{level}) / $Options::opts{rpbase});
@@ -38,7 +38,7 @@ sub penalize {
             $pen = $Options::opts{limitpen};
         }
         $Simulation::rps{$username}{next}+=$pen;
-        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The 6Death Match.");
+        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The Death Match.");
     }
     if ($type eq "MWtourney") {
         $pen = int(300 * penttl($Simulation::rps{$username}{level}) / $Options::opts{rpbase});
@@ -46,7 +46,7 @@ sub penalize {
             $pen = $Options::opts{limitpen};
         }
         $Simulation::rps{$username}{next}+=$pen;
-        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The 7Champions League.");
+        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The Champions League.");
     }
     if ($type eq "PWtourney") {
         $pen = int(300 * penttl($Simulation::rps{$username}{level}) / $Options::opts{rpbase});
@@ -54,7 +54,7 @@ sub penalize {
             $pen = $Options::opts{limitpen};
         }
         $Simulation::rps{$username}{next}+=$pen;
-        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The 12Power War".
+        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The Power War".
              "$username just lost 5 points at each item." );
               $Simulation::rps{$username}{item}{amulet} -= 5;
               $Simulation::rps{$username}{item}{boots} -= 5;
@@ -73,7 +73,7 @@ sub penalize {
             $pen = $Options::opts{limitpen};
         }
         $Simulation::rps{$username}{next}+=$pen;
-        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The 3Ability Battle.");
+        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The Ability Battle.");
     }
     if ($type eq "LWtourney") {
         $pen = int(300 * penttl($Simulation::rps{$username}{level}) / $Options::opts{rpbase});
@@ -81,7 +81,7 @@ sub penalize {
             $pen = $Options::opts{limitpen};
         }
         $Simulation::rps{$username}{next}+=$pen;
-        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The 13Location Battle.");
+        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The Location Battle.");
     }
     if ($type eq "ALWtourney") {
         $pen = int(300 * penttl($Simulation::rps{$username}{level}) / $Options::opts{rpbase});
@@ -89,7 +89,7 @@ sub penalize {
             $pen = $Options::opts{limitpen};
         }
         $Simulation::rps{$username}{next}+=$pen;
-        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The 14Alignment Battle.");
+        IRC::chanmsg("Penalty of ".Simulation::duration($pen)." added to ".$username."'s TTL for leaving The Alignment Battle.");
     }
 
     if ($type eq "quit") {
